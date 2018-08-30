@@ -5,18 +5,17 @@
 		
 		HashMap<String, String> signMap = new HashMap<>();
 
-        signMap.put("deviceSource", "Android");
-        signMap.put("appVersion", BuildConfig.APP_VERSON_NAME);
+        	signMap.put("deviceSource", "Android");
+        	signMap.put("appVersion", BuildConfig.APP_VERSON_NAME);
 
-        FormBody.Builder body = new FormBody.Builder();
-        String postBodyString = bodyToString(requestBody);
-        HashMap requestParameter = getRequestParameter(postBodyString, signMap);
-        Iterator<Map.Entry<String, String>> it = requestParameter.entrySet().iterator();
+        	FormBody.Builder body = new FormBody.Builder();
+        	String postBodyString = bodyToString(requestBody);
+        	HashMap requestParameter = getRequestParameter(postBodyString, signMap);
+        	Iterator<Map.Entry<String, String>> it = requestParameter.entrySet().iterator();
 
-        while(it.hasNext()){
+        	while(it.hasNext()){
             Map.Entry<String, String> entry = it.next();
             body.add(entry.getKey(), entry.getValue());
-        }
-        body.add("sign", SignUtil.getSign(requestParameter));
-        A.e("RequestInterceptor---->sign = " + SignUtil.getSign(signMap));
-        return body.build();
+        	}
+        	body.add("sign", SignUtil.getSign(requestParameter));
+        	return body.build();
