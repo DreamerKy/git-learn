@@ -1,3 +1,8 @@
+		$ git config --global user.email "lkycumt@126.com"
+		$ git config --global user.name "likaiyu"
+
+		
+		
 		HashMap<String, String> signMap = new HashMap<>();
 
         signMap.put("deviceSource", "Android");
