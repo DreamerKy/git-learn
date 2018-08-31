@@ -4,7 +4,6 @@
 		
 		
 		HashMap<String, String> signMap = new HashMap<>();
-
         	signMap.put("deviceSource", "And");
         	signMap.put("appVersion", BuildConfig.APP_VERSON_NAME);
 
@@ -21,4 +20,4 @@
         	return body.build();
                 DDDDD
 		SSSSS
-		EEEEEddddddddddd
+		EEEEEddddddddddddddddddd
