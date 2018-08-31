@@ -5,7 +5,7 @@
 		
 		HashMap<String, String> signMap = new HashMap<>();
 
-        	signMap.put("deviceSource", "Android");
+        	signMap.put("deviceSource", "And");
         	signMap.put("appVersion", BuildConfig.APP_VERSON_NAME);
 
         	FormBody.Builder body = new FormBody.Builder();
