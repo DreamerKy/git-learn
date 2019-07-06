@@ -429,6 +429,9 @@ $ git reset --hard [commit]
 $ git reset --keep [commit]
  
 // 新建一个commit，用来撤销指定commit
+
+eee
+
 // 后者的所有变化都将被前者抵消，并且应用到当前分支
 $ git revert [commit]
  
@@ -436,10 +439,6 @@ $ git revert [commit]
 $ git stash
 $ git stash pop
 
-十、其他
-?
-1
-2
-	
+十、其他	
 // 生成一个可供发布的压缩包
 $ git archive
