@@ -1,3 +1,5 @@
+
+Master Changed
 $ git config core.quotepath false
 设置后中文文件名不会成乱码
 
