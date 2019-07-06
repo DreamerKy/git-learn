@@ -1,8 +1,8 @@
-
+Feature Changed
 Master Changed
 $ git config core.quotepath false
 设置后中文文件名不会成乱码
-
+aaa
 git branch 查看本地所有分支
 git status 查看当前状态
 git commit 提交
@@ -233,6 +233,7 @@ $ git commit -a
 $ git commit -v
  
 // 使用一次新的commit，替代上一次提交
+替代上一次
 // 如果代码没有任何新变化，则用来改写上一次commit的提交信息
 $ git commit --amend -m [message]
  
@@ -423,6 +424,12 @@ $ git reset [commit]
  
 // 重置当前分支的HEAD为指定commit，同时重置暂存区和工作区，与指定commit一致
 $ git reset --hard [commit]
+//从暂存区中删除
+$ git rm --cached xxx文件
+
+//从版本库中删除，版本回退到错误提交前版本
+$ git reset --soft [commit]（撤销提交到暂存区）
+$ git reset --mixed [commit](撤销提交到工作区)
  
 // 重置当前HEAD为指定commit，但保持暂存区和工作区不变
 $ git reset --keep [commit]
