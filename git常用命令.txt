@@ -1,6 +1,6 @@
 $ git config core.quotepath false
 设置后中文文件名不会成乱码
-
+Test
 git branch 查看本地所有分支
 git status 查看当前状态
 git commit 提交
