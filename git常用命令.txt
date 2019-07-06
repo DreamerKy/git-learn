@@ -8,7 +8,7 @@ git branch -a 查看所有的分支
 git branch -r 查看远程所有分支
 git commit -am "init" 提交并且加注释
 git remote add origin git@192.168.1.119:ndshow
-git push origin master 将文件给推到服务器上
+git push origin master 将文件给推cd i到服务器上
 git remote show origin 显示远程库origin里的资源
 git push origin master:develop
 git push origin master:hb-dev 将本地库与服务器上的库进行关联
@@ -72,7 +72,7 @@ git remote add origin git@github.com:daixu/WebApp.git
 
 ====================================================================================================================
 Git命令参考手册(文本版)
-
+开始学
 git init                                                  # 初始化本地git仓库（创建新仓库）
 git config --global user.name "xxx"                       # 配置用户名
 git config --global user.email "xxx@xxx.com"              # 配置邮件
@@ -101,7 +101,7 @@ git show HEAD                                             # 显示HEAD提交日志
 git show HEAD^                                            # 显示HEAD的父（上一个版本）的提交日志 ^^为上两个版本 ^5为上5个版本
 git tag                                                   # 显示已存在的tag
 git tag -a v2.0 -m 'xxx'                                  # 增加v2.0的tag
-git show v2.0                                             # 显示v2.0的日志及详细内容
+git show v2.0                                             # 显示v2.0的日志及    详细内容
 git log v2.0                                              # 显示v2.0的日志
 git diff                                                  # 显示所有未添加至index的变更
 git diff --cached                                         # 显示所有已添加index但还未commit的变更
@@ -231,6 +231,7 @@ $ git commit -a
 $ git commit -v
  
 // 使用一次新的commit，替代上一次提交
+替代上一次
 // 如果代码没有任何新变化，则用来改写上一次commit的提交信息
 $ git commit --amend -m [message]
  
