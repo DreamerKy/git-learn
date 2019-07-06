@@ -101,7 +101,7 @@ git show HEAD                                             # 显示HEAD提交日志
 git show HEAD^                                            # 显示HEAD的父（上一个版本）的提交日志 ^^为上两个版本 ^5为上5个版本
 git tag                                                   # 显示已存在的tag
 git tag -a v2.0 -m 'xxx'                                  # 增加v2.0的tag
-git show v2.0                                             # 显示v2.0的日志及详细内容
+git show v2.0                                             # 显示v2.0的日志及    详细内容
 git log v2.0                                              # 显示v2.0的日志
 git diff                                                  # 显示所有未添加至index的变更
 git diff --cached                                         # 显示所有已添加index但还未commit的变更
