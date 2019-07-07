@@ -1,6 +1,20 @@
 Feature Changed
 Master Changed
 
+//修改最后一次提交
+$ git commit --amend
+
+//比较工作区和暂存区的差异
+$ git diff
+//比较暂存区和版本库差异
+$ git diff --cache HEAD(不写默认是当前最新版本)
+$ git diff --staged SHA 
+//比较工作区和版本库差异
+$ git diff HEAD(SHA)
+//比较两个版本之间差异
+$git diff SHA1 SHA2
+
+
 //重命名暂存区文件
 $ git  mv oldname newname
 
@@ -14,6 +28,7 @@ $ git rm --cached xxx文件
 //从版本库中删除，版本回退到错误提交前版本
 $ git reset --soft [commit]（撤销提交到暂存区）
 $ git reset --mixed [commit](撤销提交到工作区)
+$ git reset --hard HEAD(撤销直接丢弃版本vi)
 
 //撤销工作区文件的添加
 $ rm 文件名
@@ -22,6 +37,7 @@ $ git checkout -- 文件名
 //撤销暂存区add
 $ git reset HEAD(上一次add里面全撤销)
 $ git reset HEAD xxx(撤销xxx)
+
 
 //status查看有改动但未提交的文件时总只显示数字串，显示不出中文文件名
 git config --global core.quotepath false
