@@ -11,13 +11,14 @@ $ git reset --mixed [commit](撤销提交到工作区)
 
 //撤销工作区文件的添加
 $ rm 文件名
-//撤销工作区文件内容修改
+//撤销工作区文件内容修改 或者撤销工作区文件的删除
 $ git checkout -- 文件名 
 //撤销暂存区add
 $ git reset HEAD(上一次add里面全撤销)
 $ git reset HEAD xxx(撤销xxx)
 
-
+//status查看有改动但未提交的文件时总只显示数字串，显示不出中文文件名
+git config --global core.quotepath false
 $ git config core.quotepath false
 设置后中文文件名不会成乱码
 aaa
