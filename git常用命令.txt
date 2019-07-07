@@ -1,6 +1,12 @@
 Feature Changed
 Master Changed
 
+//重命名暂存区文件
+$ git  mv oldname newname
+
+//git命令设置别名(git olog 替代 git log --pretty=oneline)
+$ git config --global alias.olog "log --pretty=oneline"
+
 
 //从暂存区中删除（不希望提交某个文件）
 $ git rm --cached xxx文件
