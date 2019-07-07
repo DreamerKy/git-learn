@@ -1,16 +1,21 @@
 Feature Changed
 Master Changed
 
-//撤销工作区文件内容修改
-$ git checkout -- 文件名 
-//从暂存区中删除
+
+//从暂存区中删除（不希望提交某个文件）
 $ git rm --cached xxx文件
+
 //从版本库中删除，版本回退到错误提交前版本
 $ git reset --soft [commit]（撤销提交到暂存区）
 $ git reset --mixed [commit](撤销提交到工作区)
-//撤销add
+
+//撤销工作区文件的添加
+$ rm 文件名
+//撤销工作区文件内容修改
+$ git checkout -- 文件名 
+//撤销暂存区add
 $ git reset HEAD(上一次add里面全撤销)
-$ git reset HEAS xxx(撤销xxx)
+$ git reset HEAD xxx(撤销xxx)
 
 
 $ git config core.quotepath false
