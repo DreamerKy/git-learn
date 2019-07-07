@@ -1,7 +1,8 @@
 Feature Changed
 Master Changed
 
-
+//撤销工作区文件内容修改
+$ git checkout -- 文件名 
 //从暂存区中删除
 $ git rm --cached xxx文件
 //从版本库中删除，版本回退到错误提交前版本
