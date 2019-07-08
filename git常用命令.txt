@@ -3,6 +3,9 @@ Master Changed
 
 //修改最后一次提交
 $ git commit --amend
+//取消特定提交
+$ git revert SHA
+
 
 //比较工作区和暂存区的差异
 $ git diff
