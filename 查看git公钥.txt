@@ -1,0 +1,15 @@
+1.打开git bash
+
+2.输入 cd ~/.ssh
+
+//打开显示秘钥的名称
+3.ls
+
+//打开秘钥
+
+4.cat id_rsa.pub
+
+
+使用Github，也许大家觉得比较麻烦的就是在每次push的时候，都需要输入用户名和密码。如果使用SSH，就可以记住用户名，并创建属于自己的密码来保证安全操作，还有神奇的一招可以“不用输入密码”
+生成git公钥
+https://www.xuanfengge.com/using-ssh-key-link-github-photo-tour.html
